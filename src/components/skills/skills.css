@@ -33,6 +33,59 @@
     font-size: 14px;
 }
 
+.container_skills .card_skill {
+  width: 24%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--color-bg-variant);
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.container_skills .card_skill:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(169, 116, 255, 0.3);
+  border-color: var(--color-primary);
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+
+.container_skills .card_skill:hover .icon {
+  animation: pulseIcon 0.6s ease;
+}
+
+@keyframes pulseIcon {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(169, 116, 255, 0);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(169, 116, 255, 0.5);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(169, 116, 255, 0);
+  }
+}
+
+.card_skill {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: calc(var(--i) * 0.1s); /* Apply delay per card */
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 /* media query for tablet */

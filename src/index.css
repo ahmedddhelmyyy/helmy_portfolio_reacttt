@@ -9,18 +9,10 @@
 }
 
 
-/* Animate the background
-@keyframes animateBackground {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100px 100px;
-  }
-} */
 
-:root{
+/* :root{
     /* #1f1f38; */
+    /*
    --color-bg:#1f1f38;
    --color-bg-variant: #2c2c6c;
    --color-primary: #4db5ff;
@@ -28,14 +20,38 @@
    --color-white:#fff;
    --color-light:rgba(255,255,255,0.6);
    --transition:all 0.4s ease ; 
+} 
+*/
+
+/*
+:root {
+  --color-bg: #f5f5dc;                 
+  --color-bg-variant: #e3dac9;         
+  --color-primary: #a066cc;         
+  --color-primary-variant: rgba(160, 102, 204, 0.3); 
+  --color-white: #ffffff;           
+  --color-light: rgba(255, 255, 255, 0.6); 
+  --transition: all 0.4s ease;
+}*/
+
+:root {
+  --color-bg: #2a1e3f;                      /* 🔮 Dark purple (entire page background) */
+  --color-bg-variant: #4b2e70;              /* 🟣 Medium purple for cards/sections */
+  --color-primary: #a974ff;                 /* 💜 Soft elegant purple (buttons/headings) */
+  --color-primary-variant: rgba(169, 116, 255, 0.3); /* ✨ Light tint for bubbles */
+  --color-white: #ffffff;                   /* ⚪ Text and highlights */
+  --color-light: #d6c2f0;                   /* 🔆 Light lavender (secondary text) */
+  --transition: all 0.4s ease;
 }
+
+
 
 body{
     font-family: "Poppins", sans-serif;
 background-color: var(--color-bg);
 color: var(--color-white);
 line-height: 1.7;
-background-image: url(assets/bg-texture.png);
+/* background-image: url(assets/bg-texture.png); */
 /* animation: animateBackground 20s linear infinite;
   background-repeat: repeat;
   background-size: auto; */
@@ -125,6 +141,18 @@ img{
 
 }
 
+section,
+.container,
+.home,
+.about,
+.skills,
+.projects,
+.contact,
+.services,
+footer {
+  position: relative;
+  z-index: 1;
+}
 
 
 /* media query for tablet */

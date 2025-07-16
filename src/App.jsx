@@ -6,15 +6,21 @@ import Contact from './components/contact/Contact'
 import Projects from './components/projects/Projects'
 import Services from './components/services/Services'
 import Skills from './components/skills/Skills'
-
+import BubbleBackground from '../src/components/BackGround';
+import Experience from './components/experience/Experience'
 
 function App() {
 
   return (
     <>
-     <Home></Home>
+
+  <BubbleBackground /> {/* Render bubbles behind all content */}
+      
+     <Home>
+     </Home>
      <Nav></Nav>
      <About></About>
+     <Experience />
      <Skills></Skills>
      <Projects></Projects>
      <Contact></Contact>

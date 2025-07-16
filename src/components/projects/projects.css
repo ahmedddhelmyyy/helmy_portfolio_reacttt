@@ -41,6 +41,217 @@
   margin-top: 1rem;
 }
 
+/* .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+} */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  overflow-y: auto;
+  padding: 2rem 1rem;
+}
+/* .modal {
+  background-color: var(--color-bg-variant);
+  color: var(--color-white);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  width: 600px;
+} */
+ /* .modal {
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 900px;
+  max-height: 90vh; 
+  overflow-y: auto; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+} */
+
+.modal {
+  background: var(--color-bg-variant);
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: var(--color-dark); /* use dark text for readability */
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+.modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.modal::-webkit-scrollbar-track {
+  background: #2c2c6c;
+}
+
+
+.modal h2 {
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+}
+
+.modal img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  object-fit: contain;
+}
+
+.modal .swiper {
+  margin-bottom: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+/* .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: var(--color-white);
+  cursor: pointer;
+} */
+ .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  font-size: 2rem;
+  background: transparent;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+/* .modal-image {
+  width: 100%;
+  max-height: 350px;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+} */
+ /* .modal-image {
+  width: 100%;
+  height: 350px;            
+  object-fit: cover;       
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+} */
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.modal .project_description {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: var(--color-dark);
+  line-height: 1.6;
+}
+
+body.modal-open nav {
+  display: none !important;
+}
+
+/* 
+.tools_used {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+} */
+ .tools_used {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+
+/* .tool_icon {
+  background-color: var(--card-bg, rgba(255, 255, 255, 0.08));
+  padding: 0.4rem 0.6rem;
+  font-size: 0.95rem;
+  border-radius: 0.5rem;
+  color: var(--text-dark, #fff);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  user-select: none;
+} */
+
+.tool_icon {
+  padding: 0.4rem 0.75rem;
+  background: var(--color-primary-variant);
+  color: var(--color-dark);
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.swiper-slide {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.tool_icon:hover {
+  transform: scale(1.1);
+  background-color: var(--highlight, rgba(255, 255, 255, 0.2));
+  cursor: default;
+}
+
+/* Optional: dark/light mode support */
+:root {
+  --card-bg: #2e2e45;
+  --highlight: #ffffff22;
+  --text-dark: #ffffff;
+}
+
+body.light-mode {
+  --card-bg: #f2f2f2;
+  --highlight: #ddd;
+  --text-dark: #222;
+}
+
+
+
 @media (max-width: 1024px) {
   .projects {
     padding: 3rem 1.5rem;
@@ -68,5 +279,41 @@
   .portfolio_item_btns {
     flex-direction: column;
     gap: 0.75rem;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modal {
+    padding: 1.5rem;
+  }
+
+  .project_description {
+    font-size: 0.95rem;
+  }
+
+  .tool_icon {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .modal {
+    padding: 1rem;
+  }
+
+  .modal-image {
+    max-height: 60vh;
+  }
+
+  .project_description {
+    font-size: 0.9rem;
+  }
+
+  .close-btn {
+    font-size: 1.8rem;
   }
 }

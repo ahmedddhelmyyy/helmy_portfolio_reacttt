@@ -141,16 +141,15 @@ function Skills() {
     <section className="skills" id='skills'>
 
       <div className="top_section">
-        <h5>Skills</h5>
-        <h2>My Experience</h2>
-
+         <h5>Technologies I Use</h5>
+  <h2>Skills</h2>
       </div>
 
       <div className="container container_skills">
 
 
-        {SkillsData.map(({  image, title, disc }) => (
-          <article className='card_skill'>
+        {SkillsData.map(({  image, title, disc },index) => (
+          <article className='card_skill' style={{ '--i': index }}>
             <div className="icon">
               <img src={image} alt="css photo " />
             </div>
