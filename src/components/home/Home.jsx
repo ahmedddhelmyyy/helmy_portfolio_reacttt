@@ -12,7 +12,9 @@ function Home() {
 
 <div className="container home_container">
   <h4>Hello I'm</h4>
-  <h1>Ahmed Helmy</h1>
+  <h1 className="name-animation">Ahmed Helmy</h1>
+{/* <h1 className="typewriter">Ahmed Helmy</h1> */}
+
   <h4 className='text-light'>Software Engineer</h4>
 
 

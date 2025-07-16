@@ -8,7 +8,7 @@ function HomeSocials() {
     <div className='home_socials'>
         <a href="https://www.linkedin.com/in/ahmed-helmyyy" target="_blank"><FaLinkedin></FaLinkedin></a>
         <a href="https://github.com/ahmedddhelmyyy" target="_blank"><FaGithub></FaGithub></a>
-        <a href="#" target="_blank"> <FaDribbble></FaDribbble></a>
+        {/* <a href="#" target="_blank"> <FaDribbble></FaDribbble></a> */}
       
     </div>
   )
