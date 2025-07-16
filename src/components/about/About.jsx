@@ -48,13 +48,13 @@ function About() {
 
   </div>
 
-    
+
 <p>I'm a software engineer with a degree in Computer Science from Future University in Egypt. I specialize in full-stack web and mobile app development, using tools like React, Angular, Node.js, Flutter, and Laravel.
 
 I trained at the Information Technology Institute (ITI) and interned at Next Academy, where I worked on real-world projects and improved my skills in UI/UX, APIs, and database integration.</p>
 
 <a href='#contact' className='btn btn-primary'>Let's Talk !</a>
-
+{/* ss */}
 </div>
 
 
