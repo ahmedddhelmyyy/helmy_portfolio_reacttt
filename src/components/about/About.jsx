@@ -54,7 +54,7 @@ function About() {
 I trained at the Information Technology Institute (ITI) and interned at Next Academy, where I worked on real-world projects and improved my skills in UI/UX, APIs, and database integration.</p>
 
 <a href='#contact' className='btn btn-primary'>Let's Talk !</a>
-{/* ss */}
+{/* ss kk*/}
 </div>
 
 
