@@ -102,6 +102,12 @@ max-width: 1000px;
   position: relative;
   z-index: 1000;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  
+  max-height: 90vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+
+
 }
 
 .modal::-webkit-scrollbar {
@@ -177,12 +183,13 @@ max-width: 1000px;
 .modal-image {
   width: 100%;
   height: auto;
-  max-height: 70vh;
+  max-height: min(60vh, 300px); /* limit height on small screens */
   object-fit: contain;
   border-radius: 10px;
   display: block;
   margin: 0 auto 1rem auto;
 }
+
 
 .modal .project_description {
   margin: 1rem 0;
@@ -307,18 +314,18 @@ body.light-mode {
 
 @media (max-width: 480px) {
   .modal {
-    padding: 1rem;
+    padding: 0.75rem;
   }
 
   .modal-image {
-    max-height: 60vh;
+    max-height: min(50vh, 240px); /* tighter for very small devices */
   }
 
   .project_description {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .close-btn {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
