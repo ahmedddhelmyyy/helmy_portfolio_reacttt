@@ -1,39 +1,16 @@
-.container_skills{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-
+.container_skills {
+  display: flex;
+  justify-content: center; /* ✅ Center the flex items */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
-.container_skills .card_skill{
-    width: 24%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid var(--color-bg-variant);
-    padding: 10px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
-
-.container_skills .card_skill .icon{
-    width: 65px;
-    height: 65px;
-    padding: 7px;
-    border-radius: 10px;
-    background-color: var(--color-bg-variant);
-}
-
-.container_skills .card_skill h4{
-    font-size: 16px;
-}
-
-.container_skills .card_skill p{
-    font-size: 14px;
-}
-
-.container_skills .card_skill {
+/* Skill Card Styling */
+.card_skill {
   width: 24%;
   display: flex;
   align-items: center;
@@ -41,23 +18,49 @@
   border: 1px solid var(--color-bg-variant);
   padding: 10px;
   border-radius: 12px;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
   cursor: pointer;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: calc(var(--i) * 0.1s);
 }
 
-.container_skills .card_skill:hover {
+/* Icon inside skill card */
+.card_skill .icon {
+  width: 65px;
+  height: 65px;
+  padding: 7px;
+  border-radius: 10px;
+  background-color: var(--color-bg-variant);
+  flex-shrink: 0;
+}
+
+/* Text inside card */
+.card_skill h4 {
+  font-size: 16px;
+}
+
+.card_skill p {
+  font-size: 14px;
+  color: var(--color-light);
+}
+
+/* Hover Effects */
+.card_skill:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 8px 25px rgba(169, 116, 255, 0.3);
   border-color: var(--color-primary);
   background-color: rgba(255, 255, 255, 0.02);
 }
 
-
-.container_skills .card_skill:hover .icon {
+.card_skill:hover .icon {
   animation: pulseIcon 0.6s ease;
 }
 
+/* Animations */
 @keyframes pulseIcon {
   0% {
     transform: scale(1);
@@ -73,13 +76,6 @@
   }
 }
 
-.card_skill {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
-  animation-delay: calc(var(--i) * 0.1s); /* Apply delay per card */
-}
-
 @keyframes fadeInUp {
   to {
     opacity: 1;
@@ -87,40 +83,31 @@
   }
 }
 
-
-/* media query for tablet */
-@media (max-width:1024px){
-
-.container_skills .card_skill{
-    width:48%;
+/* Responsive: Tablet */
+@media (max-width: 1024px) {
+  .card_skill {
+    width: 48%;
+  }
 }
 
+/* Responsive: Mobile */
+@media (max-width: 600px) {
+  .card_skill {
+    width: 90%; /* ✅ Wider and centered on small screens */
+    max-width: 320px;
+  }
 
-
-
-
-}
-
-/* media query for mobile  */
-@media (max-width:600px){
-
-.container_skills .card_skill{
-    width:49%;
-}
-
-.container_skills .card_skill .icon{
+  .card_skill .icon {
     width: 50px;
     height: 50px;
     padding: 5px;
-}
+  }
 
-.container_skills .card_skill h4{
+  .card_skill h4 {
     font-size: 13px;
-}
+  }
 
-.container_skills .card_skill p{
+  .card_skill p {
     font-size: 10px;
-}
-
-
+  }
 }

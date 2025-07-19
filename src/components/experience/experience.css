@@ -1,9 +1,12 @@
-/* experience.css */
-
 .experience_section {
-  /* background-color: var(--color-bg-variant); */
   padding: 4rem 0;
   color: var(--color-white);
+}
+
+.experience_section h5 {
+  text-align: center;
+  color: var(--color-light);
+  margin-bottom: 0.5rem;
 }
 
 .experience_section h2 {
@@ -12,6 +15,28 @@
   margin-bottom: 3rem;
 }
 
+.experience_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+/* Card layout */
+.experience_card {
+  background: var(--card-bg, var(--color-bg-variant));
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+
+.experience_card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(169, 116, 255, 0.4);
+}
+
+/* Card header: logo + title */
 .experience_header {
   display: flex;
   align-items: center;
@@ -24,39 +49,14 @@
   height: 50px;
   object-fit: contain;
   border-radius: 8px;
-  background-color: #fff; /* Optional: for visibility */
+  background-color: #fff;
   padding: 4px;
-}
-
-.experience_section h5 {
-  text-align: center;
-  color: var(--color-light);
-  margin-bottom: 0.5rem;
-}
-
-.experience_container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  padding: 0 2rem;
-}
-
-.experience_card {
-  background: var(--card-bg);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  transition: var(--transition);
-}
-
-.experience_card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 20px rgba(169, 116, 255, 0.4);
 }
 
 .experience_card h4 {
   color: var(--color-primary);
-  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  margin: 0;
 }
 
 .experience_duration {
@@ -67,12 +67,12 @@
 }
 
 .experience_description {
-  color: var(--color-white);
   font-size: 0.95rem;
   line-height: 1.6;
+  color: var(--color-white);
 }
 
-/* Responsive adjustments */
+/* Tablet */
 @media (max-width: 768px) {
   .experience_container {
     padding: 0 1rem;
@@ -87,9 +87,19 @@
   }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
   .experience_card {
     padding: 1.2rem;
+  }
+
+  .experience_logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .experience_card h4 {
+    font-size: 1rem;
   }
 
   .experience_description {

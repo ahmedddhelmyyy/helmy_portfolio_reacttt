@@ -6,8 +6,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
-  
+  justify-content: center; /* ✅ Center the grid items horizontally */
+max-width: 1000px;
+  margin: 0 auto;
 }
+
 
 .portfolio_item {
   background: #2c2c6c;
@@ -267,13 +270,15 @@ body.light-mode {
     padding: 2rem 1rem;
   }
 
-  .projects_container {
+   .projects_container {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    justify-items: center; /* ✅ Ensures single card is centered */
+    padding: 0 1rem;
   }
 
-  .portfolio_item {
-    padding: 1rem;
+   .portfolio_item {
+    width: 100%;
+    max-width: 320px;
   }
 
   .portfolio_item_btns {

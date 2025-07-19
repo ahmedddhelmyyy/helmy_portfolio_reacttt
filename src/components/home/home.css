@@ -1,32 +1,31 @@
 .home {
   min-height: 100vh;
-  padding-top: 100px;
+  padding-top: 6rem;
   overflow-x: hidden;
   position: relative;
 }
 
 .home_container {
-  text-align: center;
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  min-height: 100%;
 }
 
-/* Profile image wrapper */
+/* Profile Image Wrapper */
 .home_container .me {
-  width: 350px;
-  max-width: 90%;
+  width: clamp(240px, 30vw, 350px);
   aspect-ratio: 3 / 4;
   background: linear-gradient(var(--color-primary), transparent);
   border-radius: 12rem 12rem 0 0;
-  margin: 40px auto;
+  margin: 2rem auto;
   padding: 1.5rem;
-  overflow: hidden;
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  overflow: hidden;
 }
 
 /* Actual image inside wrapper */
@@ -34,17 +33,19 @@
   width: 100%;
   height: auto;
   object-fit: contain;
-  border-radius: 12rem 12rem 0 0;
+  border-radius: inherit;
 }
 
-/* Buttons and scroll */
+/* Buttons */
 .btns {
   display: flex;
   gap: 1.2rem;
   margin-top: 2.5rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
+/* Scroll down text */
 .scroll_down {
   position: absolute;
   right: -35px;
@@ -53,12 +54,24 @@
   font-weight: 300;
 }
 
-.home_socials {
-  display: flex;
-  flex-direction: column;
+/* Social Icons */
+/* .home_socials {
+  position: absolute;
   left: 0;
   bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+} */
+
+/* Social Icons - Desktop */
+.home_socials {
   position: absolute;
+  left: 0;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
   gap: 0.8rem;
   align-items: center;
 }
@@ -71,10 +84,16 @@
 }
 
 .home_socials a {
-  font-size: 25px;
+  color: var(--color-primary);
+  font-size: 1.6rem;
+  transition: transform 0.3s ease;
 }
 
+.home_socials a:hover {
+  transform: scale(1.2);
+}
 
+/* Text animation */
 .name-animation {
   animation: slideFadeIn 1.2s ease-out forwards;
   opacity: 0;
@@ -88,56 +107,52 @@
   }
 }
 
-/* .typewriter {
-  overflow: hidden;
-  border-right: 3px solid var(--color-primary);
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 2s steps(12, end), blink-caret 0.75s step-end infinite;
-  width: fit-content;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  0%, 100% { border-color: transparent }
-  50% { border-color: var(--color-primary) }
-} */
-
-
-
-
-
-/* Tablet */
+/* Responsive: Tablet */
 @media (max-width: 1024px) {
   .home {
     min-height: auto;
+    padding-top: 5rem;
     padding-bottom: 4rem;
   }
 }
 
-/* Mobile */
+/* Responsive: Mobile */
 @media (max-width: 600px) {
   .home {
     padding-top: 4rem;
-    min-height: auto;
-  }
-
-  .home_socials,
-  .scroll_down {
-    display: none;
-  }
-
-  .home h1 {
-    font-size: 2rem;
   }
 
   .home_container .me {
-    width: 260px;
+    width: 240px;
     padding: 1rem;
   }
+
+  .home h1 {
+    font-size: 1.8rem;
+  }
+
+   .home_socials {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+  
+  }
+
+  .home_socials::after {
+    display: none;
+  }
+
+  .home_socials a {
+    font-size: 1.8rem;
+  }
+ .btns {
+    gap: 1rem;
+  }
 }
+
+ 
+
+
+
