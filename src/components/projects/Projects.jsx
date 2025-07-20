@@ -56,7 +56,7 @@ const portfolioData = [
     images: [P2, P1, P3, P4, P5, P6, P7, P8, P9],
     tools: ['Angular', 'Firebase', 'Cohere AI API'],
     description: 'Track your expenses and gain insights with AI-powered charting and smart recommendations.',
-    github: '',
+    github: 'https://github.com/ahmedddhelmyyy/Expense-Tracker-with-Ai',
     demo: 'https://pennywise-7b083.web.app/home'
   },
   {
