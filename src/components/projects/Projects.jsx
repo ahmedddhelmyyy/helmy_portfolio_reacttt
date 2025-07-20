@@ -65,7 +65,7 @@ const portfolioData = [
     images: [E1, E3, E2, E4, E5, E6, E7],
     tools: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
     description: 'A static e-commerce site built using Vanilla JS and Firebase for order processing and hosting.',
-    github: '',
+    github: 'https://github.com/ahmedddhelmyyy/Ecommerce-JS',
     demo: ''
   },
 
