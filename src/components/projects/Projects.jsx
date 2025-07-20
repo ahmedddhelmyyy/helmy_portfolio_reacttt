@@ -50,17 +50,8 @@ const portfolioData = [
     github: '',
     demo: ''
   },
-  {
+    {
     id: 2,
-    title: 'Vanilla JS E-Commerce Website',
-    images: [E1, E3, E2, E4, E5, E6, E7],
-    tools: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
-    description: 'A static e-commerce site built using Vanilla JS and Firebase for order processing and hosting.',
-    github: '',
-    demo: 'https://imaginative-paprenjak-14194a.netlify.app/'
-  },
-  {
-    id: 3,
     title: 'Pennywise – Expense Tracker with AI',
     images: [P2, P1, P3, P4, P5, P6, P7, P8, P9],
     tools: ['Angular', 'Firebase', 'Cohere AI API'],
@@ -68,6 +59,16 @@ const portfolioData = [
     github: '',
     demo: 'https://pennywise-7b083.web.app/home'
   },
+  {
+    id: 3,
+    title: 'Vanilla JS E-Commerce Website',
+    images: [E1, E3, E2, E4, E5, E6, E7],
+    tools: ['HTML', 'CSS', 'JavaScript', 'Firebase'],
+    description: 'A static e-commerce site built using Vanilla JS and Firebase for order processing and hosting.',
+    github: '',
+    demo: ''
+  },
+
   {
     id: 4,
     title: 'Duat – AR Tourism App',
@@ -124,7 +125,7 @@ function Projects() {
     <section className="projects" id="projects">
       <div className="top_section">
         <h5>Projects</h5>
-        <h2>What I Built</h2>
+        <h2>My Work</h2>
       </div>
 
       <div className="container projects_container">
