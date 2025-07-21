@@ -1,3 +1,5 @@
+/* src\components\projects\projects.css */
+
 .projects {
   padding: 4rem 0;
 }
@@ -196,6 +198,12 @@ max-width: 1000px;
   font-size: 1rem;
   color: var(--color-dark);
   line-height: 1.6;
+}
+
+body.modal-open {
+  overflow: hidden !important;
+  position: fixed;
+  width: 100%;
 }
 
 body.modal-open nav {

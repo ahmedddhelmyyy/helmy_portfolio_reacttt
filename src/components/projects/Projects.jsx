@@ -101,25 +101,58 @@ const portfolioData = [
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
+  // useEffect(() => {
+  //   if (selectedProject) {
+  //     document.body.style.overflow = 'hidden';
+  //     document.body.classList.add('modal-open');
+  //     const navbar = document.querySelector('.navbar');
+  //     if (navbar) navbar.style.display = 'none';
+  //   } else {
+  //     document.body.style.overflow = '';
+  //     document.body.classList.remove('modal-open');
+  //     const navbar = document.querySelector('.navbar');
+  //     if (navbar) navbar.style.display = '';
+  //   }
+  //   return () => {
+  //     document.body.style.overflow = '';
+  //     document.body.classList.remove('modal-open');
+  //     const navbar = document.querySelector('.navbar');
+  //     if (navbar) navbar.style.display = '';
+  //   };
+  // }, [selectedProject]);
+
   useEffect(() => {
-    if (selectedProject) {
-      document.body.style.overflow = 'hidden';
-      document.body.classList.add('modal-open');
-      const navbar = document.querySelector('.navbar');
-      if (navbar) navbar.style.display = 'none';
-    } else {
-      document.body.style.overflow = '';
-      document.body.classList.remove('modal-open');
-      const navbar = document.querySelector('.navbar');
-      if (navbar) navbar.style.display = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-      document.body.classList.remove('modal-open');
-      const navbar = document.querySelector('.navbar');
-      if (navbar) navbar.style.display = '';
-    };
-  }, [selectedProject]);
+  const originalStyle = window.getComputedStyle(document.body).overflow;
+
+  if (selectedProject) {
+    document.body.style.overflow = 'hidden';
+    document.body.style.position = 'fixed'; // Prevents scrolling on iOS
+    document.body.style.width = '100%';
+    document.body.classList.add('modal-open');
+
+    const navbar = document.querySelector('.navbar');
+    if (navbar) navbar.style.display = 'none';
+  } else {
+    document.body.style.overflow = originalStyle;
+    document.body.style.position = '';
+    document.body.style.width = '';
+    document.body.classList.remove('modal-open');
+
+    const navbar = document.querySelector('.navbar');
+    if (navbar) navbar.style.display = '';
+  }
+
+  return () => {
+    document.body.style.overflow = originalStyle;
+    document.body.style.position = '';
+    document.body.style.width = '';
+    document.body.classList.remove('modal-open');
+
+    const navbar = document.querySelector('.navbar');
+    if (navbar) navbar.style.display = '';
+  };
+}, [selectedProject]);
+
 
   return (
     <section className="projects" id="projects">
