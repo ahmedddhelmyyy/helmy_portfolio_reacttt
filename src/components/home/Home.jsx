@@ -1,5 +1,5 @@
 import React from 'react'
-import Me from '../../assets/cv-Photo/Helmy2.png'
+import Me from '../../../public/asse/helmy2.png'
 import './home.css'
 import CV from '../../assets/CV.pdf'
 import HomeSocials from './HomeSocials'
