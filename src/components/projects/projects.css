@@ -46,6 +46,28 @@ max-width: 1000px;
   margin-top: 1rem;
 }
 
+
+
+.project-image-frame {
+  background-color: white;
+  padding: 8px;
+  border: 3px solid var(--color-primary, #6c63ff); /* fallback to your theme color */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image-frame img {
+  border-radius: 6px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
 /* .modal-overlay {
   position: fixed;
   top: 0;

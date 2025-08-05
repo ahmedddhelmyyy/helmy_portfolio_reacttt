@@ -18,7 +18,7 @@ import Firebase from '../../assets/firebase.svg'
 import Laravel from '../../assets/laravel.svg'
 import Php from '../../assets/php.svg'
 import Ts from '../../assets/ts.svg'
-
+import Wordpress from '../../assets/logos/Wordpress.svg'
 
 // import {SiJava} from 'react-icons/si'
 const SkillsData = [
@@ -130,6 +130,12 @@ const SkillsData = [
     image: Php,
     title: 'PHP',
     disc: '',
+  },
+  {
+    id:18,
+    image:Wordpress,
+    title:'Wprdpress',
+    disc:'',
   },
 
 ];

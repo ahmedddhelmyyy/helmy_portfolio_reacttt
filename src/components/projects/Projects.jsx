@@ -178,7 +178,10 @@ function Projects() {
               >
                 {project.images.map((img, index) => (
                   <SwiperSlide key={index}>
-                    <img src={img} alt={`Project ${project.id} Screenshot ${index + 1}`} className="modal-image" />
+                  <div className="project-image-frame">
+  <img src={img} alt={`Project ${project.id} Screenshot ${index + 1}`} className="modal-image" />
+</div>
+
                   </SwiperSlide>
                 ))}
               </Swiper>
