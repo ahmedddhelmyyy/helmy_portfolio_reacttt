@@ -48,7 +48,7 @@ const portfolioData = [
     tools: ['Angular', 'Node.js', 'Express.js', 'MongoDB', 'RESTful APIs'],
     description: 'A full-featured bookstore web app with authentication, cart system, payment, and user dashboard.',
     github: 'https://github.com/ITIans-full-stack',
-    demo: 'https://bookstores-fawn.vercel.app'
+    demo: ''
   },
     {
     id: 2,
