@@ -119,12 +119,12 @@ const SkillsData = [
     disc: '',
   },
 
-  {
-    id: 16,
-    image: Laravel,
-    title: 'Laravel',
-    disc: '',
-  },
+  // {
+  //   id: 16,
+  //   image: Laravel,
+  //   title: 'Laravel',
+  //   disc: '',
+  // },
   {
     id: 17,
     image: Php,

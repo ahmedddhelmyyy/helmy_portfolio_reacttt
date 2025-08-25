@@ -34,14 +34,14 @@ function About() {
  <div className="about_card">
       <FaUser className='about_icon'/>
       <h5>Clients</h5>
-    <small>+10 Worledwide</small>
+    <small></small>
     </div>
 
 
      <div className="about_card">
       <VscFolderLibrary className='about_icon'/>
       <h5>Projects</h5>
-    <small>+20 completed </small>
+    <small>+11 completed </small>
     </div>
 
 
