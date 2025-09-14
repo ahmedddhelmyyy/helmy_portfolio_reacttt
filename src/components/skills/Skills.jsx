@@ -19,7 +19,7 @@ import Laravel from '../../assets/laravel.svg'
 import Php from '../../assets/php.svg'
 import Ts from '../../assets/ts.svg'
 import Wordpress from '../../assets/logos/Wordpress.svg'
-
+import go from '../../assets/logos/go.svg'
 // import {SiJava} from 'react-icons/si'
 const SkillsData = [
     {
@@ -138,6 +138,12 @@ const SkillsData = [
     disc:'',
   },
 
+   {
+    id:19,
+    image:go,
+    title:'Go',
+    disc:'',
+  },
 ];
 
 
