@@ -46,7 +46,7 @@ function Experience() {
   </div>
   <p><strong>Role :</strong> Full Stack Trainee</p>
   <p className="experience_description">
-    A hands-on, product-based specialization focused on full stack web development. The program covers building responsive web applications using <strong>HTML, CSS, JavaScript, MySQL, PHP</strong>, frontend frameworks like <strong>Angular</strong> and <strong>React</strong>, and backend development with <strong>Laravel</strong> and <strong>Node.js</strong>.
+    A hands-on, product-based specialization focused on full stack web development. The program covers building responsive web applications using <strong>HTML, CSS, JavaScript, MySQL, PHP</strong>, frontend frameworks like <strong>Angular</strong> and <strong>React</strong>, and backend development with  <strong>Node.js</strong>.
   </p>
 </div>
 
