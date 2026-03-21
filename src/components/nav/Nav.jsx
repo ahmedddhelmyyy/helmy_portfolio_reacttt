@@ -60,7 +60,7 @@ function Nav() {
 
   <a
     className={activeNav === '#skills' ? "active" : ""}
-    href="#skillss"
+    href="#skills"
     title="Skills"
   >
     <GiSkills />
