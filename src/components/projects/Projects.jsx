@@ -1,3 +1,4 @@
+///Users/ahmedhelmy/Desktop/portfolio/MainPortfolio/helmy_portfolio_reacttt/src/components/projects/Projects.jsx
 import React, { useState, useEffect } from 'react';
 import './projects.css';
 import { Autoplay } from 'swiper/modules';
