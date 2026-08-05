@@ -7,39 +7,39 @@ import 'swiper/css/bundle';
 import { register } from 'swiper/element/bundle';
 register();
 
-// Image imports
-import Full1 from '../../assets/full-stack -books/login.png';
-import Full2 from '../../assets/full-stack -books/landing.png';
-import Full3 from '../../assets/full-stack -books/welcome.png';
-import Full4 from '../../assets/full-stack -books/books.png';
-import Full5 from '../../assets/full-stack -books/cart.png';
-import Full6 from '../../assets/full-stack -books/payment.png';
-import Full7 from '../../assets/full-stack -books/profile.png';
+// Image imports (pre-padded to a uniform canvas — see src/assets/padded)
+import Full1 from '../../assets/padded/full-stack -books/login.jpg';
+import Full2 from '../../assets/padded/full-stack -books/landing.jpg';
+import Full3 from '../../assets/padded/full-stack -books/welcome.jpg';
+import Full4 from '../../assets/padded/full-stack -books/books.jpg';
+import Full5 from '../../assets/padded/full-stack -books/cart.jpg';
+import Full6 from '../../assets/padded/full-stack -books/payment.jpg';
+import Full7 from '../../assets/padded/full-stack -books/profile.jpg';
 
-import E1 from '../../assets/JS - Ecommerce/home.png';
-import E2 from '../../assets/JS - Ecommerce/products.png';
-import E3 from '../../assets/JS - Ecommerce/cart.png';
-import E4 from '../../assets/JS - Ecommerce/checkout.png';
-import E5 from '../../assets/JS - Ecommerce/payment.png';
-import E6 from '../../assets/JS - Ecommerce/success.png';
-import E7 from '../../assets/JS - Ecommerce/orders.png';
+import E1 from '../../assets/padded/JS - Ecommerce/home.jpg';
+import E2 from '../../assets/padded/JS - Ecommerce/products.jpg';
+import E3 from '../../assets/padded/JS - Ecommerce/cart.jpg';
+import E4 from '../../assets/padded/JS - Ecommerce/checkout.jpg';
+import E5 from '../../assets/padded/JS - Ecommerce/payment.jpg';
+import E6 from '../../assets/padded/JS - Ecommerce/success.jpg';
+import E7 from '../../assets/padded/JS - Ecommerce/orders.jpg';
 
-import P1 from '../../assets/Angular - expense Tracker/signin.png';
-import P2 from '../../assets/Angular - expense Tracker/home.png';
-import P3 from '../../assets/Angular - expense Tracker/chart.png';
-import P4 from '../../assets/Angular - expense Tracker/add_expense.png';
-import P5 from '../../assets/Angular - expense Tracker/ai (1).png';
-import P6 from '../../assets/Angular - expense Tracker/recent.png';
-import P7 from '../../assets/Angular - expense Tracker/allTransaction.png';
-import P8 from '../../assets/Angular - expense Tracker/profile.jpg';
-import P9 from '../../assets/Angular - expense Tracker/ai (2).png';
+import P1 from '../../assets/padded/Angular - expense Tracker/signin.jpg';
+import P2 from '../../assets/padded/Angular - expense Tracker/home.jpg';
+import P3 from '../../assets/padded/Angular - expense Tracker/chart.jpg';
+import P4 from '../../assets/padded/Angular - expense Tracker/add_expense.jpg';
+import P5 from '../../assets/padded/Angular - expense Tracker/ai (1).jpg';
+import P6 from '../../assets/padded/Angular - expense Tracker/recent.jpg';
+import P7 from '../../assets/padded/Angular - expense Tracker/allTransaction.jpg';
+import P8 from '../../assets/padded/Angular - expense Tracker/profile.jpg';
+import P9 from '../../assets/padded/Angular - expense Tracker/ai (2).jpg';
 
-import D1 from '../../assets/Duat/mainS.png';
-import D2 from '../../assets/Duat/irec.jpg';
-import D3 from '../../assets/Duat/monu.png';
+import D1 from '../../assets/padded/Duat/mainS.jpg';
+import D2 from '../../assets/padded/Duat/irec.jpg';
+import D3 from '../../assets/padded/Duat/monu.jpg';
 
-import S1 from '../../assets/skull/skulll.png';
-import MM1 from '../../assets/moview review/movie-reviewer.png';
+import S1 from '../../assets/padded/skull/skulll.jpg';
+import MM1 from '../../assets/padded/moview review/movie-reviewer.jpg';
 
 const portfolioData = [
   {
@@ -224,7 +224,6 @@ function Projects() {
                   <img
                     src={img}
                     alt={`Slide ${i + 1}`}
-                    style={{ width: '100%', height: '350px', objectFit: 'cover' }}
                   />
                 </SwiperSlide>
               ))}

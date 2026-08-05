@@ -1,9 +1,9 @@
 import React from 'react'
-import Me from '../../../public/asse/helmy2.png'
+import Me from '../../../public/asse/pic-2.jpeg'
 import './home.css'
 import CV from '../../assets/CV.pdf'
 import HomeSocials from './HomeSocials'
-import Ahmed_helmy_CV from '../../assets/cvs/Ahmed_helmy_cv.pdf'
+import Ahmed_helmy_CV from '../../assets/cvs/Ahmed_M_Ashraf_Helmy_CV.pdf'
 
 function Home() {
   return (
